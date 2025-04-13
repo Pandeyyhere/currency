@@ -1,6 +1,8 @@
 # 💱 Currency Converter
 
 A sleek and responsive currency converter web application that allows users to convert between major global currencies in real-time. Built with HTML, CSS, and JavaScript, this tool fetches live exchange rates from the [ExchangeRate-API](https://www.exchangerate-api.com/).
+## Live Demo
+[Click here to view the application](https://currency-n9ie.onrender.com/)
 
 ## 🌟 Features
 
