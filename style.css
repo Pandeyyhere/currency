@@ -1,0 +1,122 @@
+:root {
+    --bg-light: #f8f9fa;
+    --text-light: #212529;
+    --bg-dark: #343a40;
+    --text-dark: #f8f9fa;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --border-radius: 8px;
+  }
+  
+  [data-theme="dark"] {
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
+  }
+  
+  [data-theme="light"] {
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+  }
+  
+  body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary);
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #495057;
+  }
+  
+  .converter-form input,
+  .converter-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .favorites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .favorites-list li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .favorites-list button {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Currency Converter</h1>
+      <button id="theme-toggle" class="btn-secondary">Toggle Theme</button>
+    </header>
+    <form id="converter-form" class="converter-form">
+      <input type="number" id="amount" placeholder="Enter Amount" value="1" min="0">
+      <div class="dropdowns">
+        <select id="from-currency"></select>
+        <select id="to-currency"></select>
+      </div>
+      <button type="submit" class="btn-primary">Convert</button>
+    </form>
+    <div id="result" class="result"></div>
+    <button id="save-favorite" class="btn-secondary">Save as Favorite</button>
+    <section>
+      <h2>Favorites</h2>
+      <ul id="favorites-list" class="favorites-list"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
